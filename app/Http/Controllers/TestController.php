@@ -13,11 +13,11 @@ class TestController extends Controller
         return view('index', ['tests' => $tests]);  
     }
     public function post(TestRequest $request) {
-        return view('thanks');
+        return view('/');
     }
     public function create(TestRequest $request) {
         $form = $request->all();
         Test::create($form);
-        return redirect('/');
+        return view('thanks');
     }
 }

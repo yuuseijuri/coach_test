@@ -11,7 +11,7 @@
     @endforeach
   </ul>
 @endif
-<form action="/" method="post">
+<form action="/add" method="post">
   @csrf
   <p>氏名</p>
   <input type="text" name="name">
